@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.contrib.auth.models import User, Group
-from Louisiana.models import Slavetransactions
+from Louisiana.models import SlaveTransactions
 from rest_framework import viewsets
 from rest_framework import permissions
 from .serializers import UserSerializer, GroupSerializer, SlaveTransactionSerializer
@@ -30,6 +30,6 @@ class TransactionRecordsViewSet(viewsets.ModelViewSet):
     '''
     API endpoint that allows transaction records to be viewed or edited
     '''
-    queryset = Slavetransactions.objects.all()
+    queryset = SlaveTransactions.objects.all()
     serializer_class = SlaveTransactionSerializer
     permission_classes = [permissions.IsAuthenticated]

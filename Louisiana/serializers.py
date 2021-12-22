@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User, Group
-from Louisiana.models import Slavetransactions
+from Louisiana.models import SlaveTransactions
 from rest_framework import serializers
 
 
@@ -17,5 +17,5 @@ class GroupSerializer ( serializers.HyperlinkedModelSerializer ):
 
 class SlaveTransactionSerializer ( serializers.HyperlinkedModelSerializer ):
     class Meta:
-        model = Slavetransactions
+        model = SlaveTransactions
         fields = '__all__'

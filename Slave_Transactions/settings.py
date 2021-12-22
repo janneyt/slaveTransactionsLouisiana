@@ -83,8 +83,12 @@ WSGI_APPLICATION = 'Slave_Transactions.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'C:/Users/casti/Downloads/slave-transaction-database',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'Appjordan#1',
+        'HOST': 'localhost',
+        'POST': '',
     }
 }
 
