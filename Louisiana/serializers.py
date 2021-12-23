@@ -15,7 +15,9 @@ class GroupSerializer ( serializers.HyperlinkedModelSerializer ):
         fields = ['url', 'name']
 
 
-class SlaveTransactionSerializer ( serializers.HyperlinkedModelSerializer ):
+class SlaveTransactionSerializer ( serializers.HyperlinkedModelSerializer):
     class Meta:
         model = SlaveTransactions
         fields = '__all__'
+
+

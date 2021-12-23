@@ -19,6 +19,6 @@ from django.contrib import admin
 import rest_framework
 
 urlpatterns = [
-    path('louisiana/', include('Louisiana.urls')),
+    path('', include('Louisiana.urls')),
     path('admin/', admin.site.urls),
 ]
